@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pertanyaan Konsultasi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #E3F2FD;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2196F3;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #pertanyaan-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #pertanyaan {
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #pertanyaan h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #pertanyaan p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .checkbox-container {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .checkbox-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        #mulaiKonsultasi {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            font-size: 1.5em;
+            padding: 12px 25px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #2196F3;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Beranda</a></li>
+            <li><a href="./penanganan.html">Penanganan</a></li>
+        </ul>
+    </nav>
+
+    <div id="pertanyaan-container">
+        <div id="pertanyaan">
+            <h1>Pertanyaan Konsultasi</h1>
+            <p>Silakan pilih pertanyaan yang ingin Anda ajukan:</p>
+
+            <div class="checkbox-container">
+                <!-- Container pertanyaan dengan checkbox -->
+                <!-- Container pertanyaan dengan checkbox -->
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" id="pertanyaan1" name="pertanyaan" value="1">
+                Saya merasa sulit untuk berhenti bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan2" name="pertanyaan" value="2">
+                Saya merasa gelisah atau tidak sabar ketika tidak bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya sering bermain PUBG Mobile lebih lama dari yang seharusnya?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya sering mengabaikan tugas atau pekerjaan karena bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa tegang atau stres ketika tidak dapat bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya menghabiskan lebih banyak waktu bermain PUBG Mobile daripada
+                bersosialisasi dengan orang lain?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa kehilangan kontrol atas berapa lama saya bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa tidak nyaman ketika tidak memiliki akses ke PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya sering berpikir tentang PUBG Mobile bahkan saat tidak bermain?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa marah atau frustrasi ketika terganggu saat bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa bersalah setelah menghabiskan banyak waktu bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya kurang tidur karena bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya kurang memperhatikan kebersihan diri atau kesehatan karena bermain PUBG
+                Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya mengabaikan tanggung jawab pribadi karena bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa kesepian atau terasing karena lebih suka bermain PUBG Mobile daripada
+                bersosialisasi?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya meminjam uang atau menghabiskan uang yang seharusnya digunakan untuk
+                kebutuhan lain demi PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya sering berpikir bahwa kehidupan saya lebih menyenangkan ketika bermain
+                PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa frustrasi jika koneksi internet buruk saat bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya melupakan waktu ketika asyik bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa terpaku pada layar gadget ketika bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa kecewa dengan diri sendiri setelah bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa lebih bersemangat dan hidup saat bermain PUBG Mobile?
+            </label>
+            <label>
+                <input type="checkbox" id="pertanyaan3" name="pertanyaan" value="3">
+                Saya merasa sulit berkonsentrasi pada tugas atau pekerjaan lain karena terganggu oleh
+                pikiran tentang PUBG Mobile?
+            </label>
+                <!-- Tambahkan pertanyaan lainnya sesuai kebutuhan -->
+            </div>
+
+            <div id="mulaiKonsultasi">
+                <a href="./hasil.html" class="btn btn-primary">Kirim</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Konsultasi Kecanduan Game Online</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Konsultasi Kecanduan Game Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #E3F2FD;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #hasilKonsultasi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 70px;
+        }
+
+        #hasilKonsultasi h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #hasilPersentase {
+            margin-top: 20px;
+        }
+
+        #keterangan {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #2196F3;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hasil Konsultasi -->
+    <div id="hasilKonsultasi">
+        <h1>Hasil Konsultasi Kecanduan Game Online</h1>
+
+        <!-- Menampilkan hasil persentase -->
+        <div id="hasilPersentase">
+            <p>Anda telah menjawab <span id="persentase">0</span>% pertanyaan.</p>
+            <p>Hasil Kecanduan Bermain Game Anda: <span id="hasilKecanduan">0</span>%</p>
+            <p id="keterangan"></p>
+        </div>
+    </div>
+
+    <!-- Footer (opsional) -->
+    <footer>
+        <p>&copy; 2023 Konsultasi Kecanduan Game Online</p>
+    </footer>
+
+    <!-- Script -->
+    <!-- Script -->
+<script>
+    // Fungsi hitungPersentase untuk menampilkan hasil
+    function hitungPersentase(jawabanYangDiisi) {
+        // Misalnya, hitung persentase dan hasil kecanduan berdasarkan jumlah pertanyaan yang dijawab
+        var totalPertanyaan = 26; // Gantilah dengan total pertanyaan yang ada
+        var persentase = (jawabanYangDiisi / totalPertanyaan) * 100;
+        var hasilKecanduan = persentase * 0.75;
+
+        document.getElementById('persentase').innerText = persentase.toFixed(2);
+        document.getElementById('hasilKecanduan').innerText = hasilKecanduan.toFixed(2);
+
+        // Menambahkan keterangan berdasarkan persentase
+        var keterangan = document.getElementById('keterangan');
+        if (persentase <= 50) {
+            keterangan.innerText = "Tidak parah.";
+        } else {
+            keterangan.innerText = "Parah.";
+        }
+    }
+
+    // Panggil fungsi hitungPersentase saat halaman dimuat
+    window.onload = function () {
+        // Gantilah nilai di bawah dengan jumlah pertanyaan yang dijawab oleh pengguna
+        var jawabanYangDiisi = 26;
+        hitungPersentase(jawabanYangDiisi);
+    };
+</script>
+
+</body>
+</html>
